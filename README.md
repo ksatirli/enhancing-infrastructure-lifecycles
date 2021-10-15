@@ -4,8 +4,21 @@
 
 - [Citrix Converge: Packer & Terraform](#citrix-converge-packer--terraform)
   - [Table of Contents](#table-of-contents)
+  - [Requirements](#requirements)
   - [Author Information](#author-information)
   - [License](#license)
+
+## Requirements
+
+* Software
+  * [HashiCorp Terraform](https://www.terraform.io/downloads.html) `1.0.9` or later
+  * [HashiCorp Packer](https://www.packer.io/downloads) `1.7.6` or later
+  * [Azure Command-Line Interface](https://docs.microsoft.com/en-us/cli/azure/) `2.29.0` or later
+
+* Services
+  * [Terraform Cloud](https://app.terraform.io/signup/account) (free)
+  * [HashiCorp Cloud](https://portal.cloud.hashicorp.com/sign-up) (free credit)
+  * [Microsoft Azure](https://azure.microsoft.com/en-us/free/) (free credit)
 
 ## Author Information
 
