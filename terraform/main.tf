@@ -1,3 +1,19 @@
+# create a random string for use with resources that require randomness
+# see https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
+resource "random_string" "four" {
+  lower   = true
+  length  = 4
+  special = false
+  upper   = false
+}
+
+# create an Azure Resource Group for use with Packer
+# see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group
+resource "azurerm_resource_group" "packer" {
+  name     = "${var.resource_group_name}-${random_string.four.id}"
+  location = var.resource_group_location
+}
+
 locals {
   terraform_data = templatefile("./templates/variables.pkrvars.hcl", {
     location                          = azurerm_resource_group.packer.location

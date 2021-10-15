@@ -7,6 +7,7 @@
   - [Author Information](#author-information)
   - [License](#license)
   - [Requirements](#requirements)
+  - [Usage](#usage)
   - [Author Information](#author-information)
   - [License](#license)
 
@@ -18,9 +19,10 @@
   * [Azure Command-Line Interface](https://docs.microsoft.com/en-us/cli/azure/) `2.29.0` or later
 
 * Services
-  * [Terraform Cloud](https://app.terraform.io/signup/account) (free)
-  * [HashiCorp Cloud](https://portal.cloud.hashicorp.com/sign-up) (free credit)
+  * (optional) [Terraform Cloud](https://app.terraform.io/signup/account) (free)
   * [Microsoft Azure](https://azure.microsoft.com/en-us/free/) (free credit)
+
+## Usage
 
 ## Author Information
 
