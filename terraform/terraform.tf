@@ -4,14 +4,14 @@ terraform {
   # See https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up.
 
   # see https://www.terraform.io/docs/language/settings/backends/remote.html
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "ksatirli"
-
-    workspaces {
-      name = "citrix-converge-2021"
-    }
-  }
+  #backend "remote" {
+  #  hostname     = "app.terraform.io"
+  #  organization = "a-demo-organization"
+  #
+  #  workspaces {
+  #    name = "citrix-converge-2021"
+  #  }
+  #}
 
   # see https://www.terraform.io/docs/language/settings/index.html#specifying-provider-requirements
   required_providers {
