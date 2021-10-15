@@ -4,6 +4,8 @@
 
 - [Citrix Converge: Packer & Terraform](#citrix-converge-packer--terraform)
   - [Table of Contents](#table-of-contents)
+  - [Author Information](#author-information)
+  - [License](#license)
   - [Requirements](#requirements)
   - [Author Information](#author-information)
   - [License](#license)
