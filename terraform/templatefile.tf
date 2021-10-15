@@ -13,5 +13,5 @@ resource "local_file" "terraform_data_for_packer" {
 
   # Packer automatically loads files that end in `*.auto.pkrvars.hcl`
   # see https://www.packer.io/guides/hcl/variables#from-a-file
-  filename = "../packer/variables.pkrvars.hcl"
+  filename = "../packer/generated.auto.pkrvars.hcl"
 }
