@@ -27,7 +27,7 @@ resource "azurerm_network_interface" "citrix" {
   # see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface#ip_configuration
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = azurerm_subnet.packer.id
+    subnet_id                     = azurerm_subnet.citrix.id
     private_ip_address_allocation = "Dynamic"
   }
 }

@@ -21,7 +21,7 @@ resource "azurerm_linux_virtual_machine" "citrix" {
 
   # see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#network_interface_ids
   network_interface_ids = [
-    azurerm_network_interface.packer.id,
+    azurerm_network_interface.citrix.id,
   ]
 
   # see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#caching
