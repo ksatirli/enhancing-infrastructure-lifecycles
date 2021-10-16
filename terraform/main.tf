@@ -9,15 +9,15 @@ resource "random_string" "four" {
 
 # create an Azure Resource Group for use with Packer
 # see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group
-resource "azurerm_resource_group" "packer" {
+resource "azurerm_resource_group" "citrix" {
   name     = local.resource_group_name
   location = var.resource_group_location
 }
 
 locals {
   terraform_data = templatefile("./templates/generated.auto.pkrvars.hcl", {
-    location                          = azurerm_resource_group.packer.location
-    managed_image_resource_group_name = azurerm_resource_group.packer.name
+    location                          = azurerm_resource_group.citrix.location
+    managed_image_resource_group_name = azurerm_resource_group.citrix.name
   })
 }
 
