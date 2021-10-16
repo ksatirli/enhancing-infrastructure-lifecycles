@@ -12,3 +12,8 @@ variable "resource_group_location" {
   description = "The Azure Region where the Resource Group should exist"
   default     = "eastus" # Virginia, US
 }
+
+locals {
+  # generate unique Resource Group Name by appending a random string
+  resource_group_name = "${var.resource_group_name}-${random_string.four.id}"
+}
