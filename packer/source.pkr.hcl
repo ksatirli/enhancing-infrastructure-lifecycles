@@ -1,17 +1,3 @@
-packer {
-  # see https://www.packer.io/docs/templates/hcl_templates/blocks/packer#version-constraint-syntax
-  required_version = ">= 1.7.6"
-
-  # see https://www.packer.io/docs/templates/hcl_templates/blocks/packer#specifying-plugin-requirements
-  required_plugins {
-    # see https://github.com/hashicorp/packer-plugin-azure/releases/
-    azure = {
-      version = "1.0.3"
-      source  = "github.com/hashicorp/azure"
-    }
-  }
-}
-
 # see https://www.packer.io/docs/builders/azure/arm
 source "azure-arm" "image" {
   # the following configuration represents a curated variable selection
@@ -38,25 +24,4 @@ source "azure-arm" "image" {
   use_azure_cli_auth = true
 
   vm_size = var.vm_size
-}
-
-build {
-  name = "provisioners"
-
-  sources = [
-    "source.azure-arm.image"
-  ]
-
-  # carry out deprovisioning steps: https://www.packer.io/docs/builders/azure/arm#linux
-  # for information on the Azure Linux Guest Agent, see https://github.com/Azure/WALinuxAgent
-  provisioner "shell" {
-    execute_command = "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'"
-
-    inline = [
-      "/usr/sbin/waagent -force -deprovision+user",
-      "sync"
-    ]
-
-    inline_shebang = "/bin/sh -x"
-  }
 }
