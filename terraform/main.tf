@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "packer" {
 }
 
 locals {
-  terraform_data = templatefile("./templates/variables.pkrvars.hcl", {
+  terraform_data = templatefile("./templates/generated.auto.pkrvars.hcl", {
     location                          = azurerm_resource_group.packer.location
     managed_image_resource_group_name = azurerm_resource_group.packer.name
   })
