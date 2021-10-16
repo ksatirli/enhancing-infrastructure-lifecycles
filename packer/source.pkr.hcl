@@ -13,8 +13,12 @@ source "azure-arm" "image" {
   image_version   = var.image_version
 
   location                          = var.location
-  managed_image_name                = "citrix-converge"
+
+  # set the values for Image Name and Image Resource Group Name from variables
+  # consider if these values make sense for your organization and update as needed
+  managed_image_name                = var.managed_image_resource_group_name
   managed_image_resource_group_name = var.managed_image_resource_group_name
+
   os_type                           = "Linux"
   ssh_clear_authorized_keys         = true
   ssh_disable_agent_forwarding      = true
