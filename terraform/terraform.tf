@@ -23,7 +23,7 @@ terraform {
 
     # see https://registry.terraform.io/providers/hashicorp/local/latest
     local = {
-      source = "hashicorp/local"
+      source  = "hashicorp/local"
       version = "2.1.0"
     }
 
