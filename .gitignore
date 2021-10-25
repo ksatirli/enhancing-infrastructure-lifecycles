@@ -15,3 +15,6 @@
 
 # Crash log files
 crash.log
+
+### Packer ###
+packer/generated.auto.pkrvars.hcl
