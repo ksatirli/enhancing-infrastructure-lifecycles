@@ -1,7 +1,7 @@
 variable "resource_group_name" {
   type        = string
   description = "The Name which should be used for this Resource Group"
-  default     = "citrix-converge"
+  default     = "converge"
 }
 
 # set a geographic location for the Resource Group
