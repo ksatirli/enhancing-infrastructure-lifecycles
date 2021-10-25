@@ -15,6 +15,8 @@
 
 ## Important Links
 
+> ⚠️ Looking for the Workshop content? Head on over to [./workshop](https://github.com/ksatirli/enhancing-infrastructure-lifecycles/tree/main/workshop)
+
 * Slides: [speakerdeck.com/ksatirli/enhancing-infrastructure-lifecycles](https://speakerdeck.com/ksatirli/enhancing-infrastructure-lifecycles)
 * Code: [https://github.com/ksatirli/enhancing-infrastructure-lifecycles](https://github.com/ksatirli/enhancing-infrastructure-lifecycles)
 
