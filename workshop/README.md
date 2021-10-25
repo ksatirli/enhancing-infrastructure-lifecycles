@@ -1,3 +1,7 @@
+# Workshop
+
+> Learn Terraform by creating a Windows Virtual Machine in Microsoft Azure.
+
 ## Table of Contents
 
 - [Workshop](#workshop)
