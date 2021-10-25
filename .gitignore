@@ -19,6 +19,7 @@ crash.log
 ### Packer ###
 packer/generated.auto.pkrvars.hcl
 
+
 ### Workshop-specific ignores ###
 workshop/.terraform.lock.hcl
 workshop/*.rdp
