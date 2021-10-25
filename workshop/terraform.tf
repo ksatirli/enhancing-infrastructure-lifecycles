@@ -38,14 +38,6 @@ terraform {
       source  = "hashicorp/local"
       version = "2.1.0"
     }
-
-    # 🔧 WORKSHOP:
-    # put code for `random` here
-    # see https://registry.terraform.io/providers/hashicorp/random/latest
-    random = {
-      source  = "hashicorp/random"
-      version = "3.1.0"
-    }
   }
 
   # 🔧 WORKSHOP:

@@ -39,9 +39,11 @@ Workshop steps are indicated with a (commented) _wrench_ emoji: `🔧`, followed
 
 ### Flow
 
+This section contains the suggested flow for this workshop.
+
 #### Initialize Terraform
 
-* open `terraform.tf` and complete `5` steps
+* open `terraform.tf` and complete `4` steps
 * run `terraform init` in your terminal
 * verify your code and run `terraform providers`
 * compare the output with the following output:
@@ -49,7 +51,6 @@ Workshop steps are indicated with a (commented) _wrench_ emoji: `🔧`, followed
 ```shell
 Providers required by configuration:
 .
-├── provider[registry.terraform.io/hashicorp/random] 3.1.0
 ├── provider[registry.terraform.io/hashicorp/azurerm] 2.82.0
 └── provider[registry.terraform.io/hashicorp/local] 2.1.0
 ```
