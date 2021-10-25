@@ -14,6 +14,8 @@
     - [Create the Resource Group](#create-the-resource-group)
     - [Create the Network Configuration](#create-the-network-configuration)
     - [Create the Virtual Machine](#create-the-virtual-machine)
+    - [Create Output Values](#create-output-values)
+    - [Create Remote Desktop Configuration](#create-remote-desktop-configuration)
 
 ## Requirements
 
@@ -106,4 +108,37 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 #### Create Output Values
 
-* open `outputs.tf` and complete `` steps
+* open `outputs.tf` and complete `3` steps
+* run `terraform apply` in your terminal to apply your changes
+* compare the output with the following output:
+
+```shell
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+virtual_machine_public_ip_address = "<Virtual Machine IP Address>"
+```
+
+<small>Outputs are not counted as resources in Terraform.</small>
+
+#### Create Remote Desktop Configuration
+
+* open `remote_desktop_connection.tf` and complete `6` steps
+* run `terraform apply` in your terminal to apply your changes
+* compare the output with the following output:
+
+```shell
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+virtual_machine_public_ip_address = "40.121.23.96"
+```
+
+<small>The `1` in the above output refers to the RDP Configuration file you just created.</small>
+
+#### Optional: Connect to the Virtual Machine
+
+* open `converge.rdp` using Microsoft Remote Desktop ([Windows](https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps#activetab=pivot:overviewtab), [macOS](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12))
+* enter the password you previously set
