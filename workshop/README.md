@@ -75,7 +75,8 @@ No changes. Your infrastructure matches the configuration.
 #### Create the Network Configuration
 
 * open `network.tf` and complete `6` steps
-* open `network_interface.tf` and complete `9` steps
+* open `network_publicip.tf` and complete `6` steps
+* open `network_interface.tf` and complete `10` steps
 * open `network_subnet.tf` and complete `6` steps
 * run `terraform fmt` in your terminal to format the code
 * run `terraform validate` in your terminal to validate the code
@@ -83,14 +84,14 @@ No changes. Your infrastructure matches the configuration.
 * compare the output with the following output:
 
 ```shell
-Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
+Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 ```
 
-<small>The `3` in the above output refers to the Virtual Network, Subnet, and Network Interface you just created.</small>
+<small>The `4` in the above output refers to the Virtual Network, Subnet, Network Interface, and the Static IP you just created.</small>
 
 #### Create the Virtual Machine
 
-* open `virtual_machine.tf` and complete `` steps
+* open `virtual_machine.tf` and complete `17` steps
 * run `terraform fmt` in your terminal to format the code
 * run `terraform validate` in your terminal to validate the code
 * run `terraform apply` in your terminal to apply your changes
@@ -101,3 +102,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
 <small>The `1` in the above output refers to the Windows Virtual Machine you just created.</small>
+
+#### Create Output Values
+
+* open `outputs.tf` and complete `` steps

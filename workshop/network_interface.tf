@@ -15,6 +15,9 @@ resource "azurerm_network_interface" "converge" {
 
     # 🔧 WORKSHOP: set the Private IP Address Allocation to be dynamic (note the capitalization)
     private_ip_address_allocation = "Dynamic"
+
+    # 🔧 WORKSHOP: set the Public IP Address ID to be a dynamic reference of the ID of the "Public IP" resource
+    public_ip_address_id = azurerm_public_ip.windows.id
   }
 
   # 🔧 WORKSHOP: set the Location to be a dynamic reference of the Location of the "Resource Group" resource
