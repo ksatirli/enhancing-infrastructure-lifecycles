@@ -6,7 +6,7 @@
 # 🔧 WORKSHOP: give the IP a Terraform ID of "windows"
 resource "azurerm_public_ip" "windows" {
   # 🔧 WORKSHOP: set the Allocation Method to "static" (note the capitalization)
-  allocation_method   = "Static"
+  allocation_method = "Static"
 
   # 🔧 WORKSHOP: set the Location to be a dynamic reference of the Location of the "Virtual Network" resource
   location = azurerm_virtual_network.converge.location

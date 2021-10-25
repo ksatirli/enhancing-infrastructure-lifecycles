@@ -16,6 +16,9 @@
     - [Create the Virtual Machine](#create-the-virtual-machine)
     - [Create Output Values](#create-output-values)
     - [Create Remote Desktop Configuration](#create-remote-desktop-configuration)
+    - [Connect to the Virtual Machine (optional)](#connect-to-the-virtual-machine-optional)
+    - [Remove resources](#remove-resources)
+  - [Notes](#notes)
 
 ## Requirements
 
@@ -138,7 +141,26 @@ virtual_machine_public_ip_address = "40.121.23.96"
 
 <small>The `1` in the above output refers to the RDP Configuration file you just created.</small>
 
-#### Optional: Connect to the Virtual Machine
+#### Connect to the Virtual Machine (optional)
 
 * open `converge.rdp` using Microsoft Remote Desktop ([Windows](https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps#activetab=pivot:overviewtab), [macOS](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12))
 * enter the password you previously set
+* click the "Connect" button
+* install and play Minesweeper 💣
+
+#### Remove resources
+
+⚠️ Continuing with this step will remove _all_ Terraform-managed resources created in the previous steps.
+
+* run `terraform destroy` in your terminal to destroy all resources
+* compare the output with the following output:
+
+```shell
+Plan: 0 to add, 0 to change, 6 to destroy.
+```
+
+* confirm the destruction by typing `yes`
+
+## Notes
+
+* Many parts of this workshop align with current Terraform best-practices. The resulting resources, however, must _not_ be considered production-grade.

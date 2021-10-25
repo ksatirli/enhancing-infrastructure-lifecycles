@@ -23,3 +23,4 @@ packer/generated.auto.pkrvars.hcl
 workshop/.terraform.lock.hcl
 workshop/*.rdp
 !workshop/templates/template.rdp
+workshop/solution
