@@ -1,4 +1,4 @@
-## see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/image
+# see https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/image
 data "azurerm_image" "converge" {
   name                = local.resource_group_name
   resource_group_name = local.resource_group_name
