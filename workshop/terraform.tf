@@ -1,4 +1,4 @@
-terraform {
+
   # This section enables storing of Terraform State within Terraform Cloud.
   # To enable this, a (free) Terraform Cloud account is required.
   # See https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up.
@@ -14,7 +14,7 @@ terraform {
   #}
 
   # see https://www.terraform.io/docs/language/settings/index.html#specifying-provider-requirements
-  required_providers {
+
     # 🔧 WORKSHOP:
     # We will be using three Terraform Providers for this workshop:
     # AzureRM, Local, and Random
@@ -26,19 +26,19 @@ terraform {
     # 🔧 WORKSHOP:
     # put code for `azurerm` here
     # see https://registry.terraform.io/providers/hashicorp/azurerm/latest
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "2.82.0"
-    }
+
+
+
+
 
     # 🔧 WORKSHOP:
     # put code for `local` here
     # see https://registry.terraform.io/providers/hashicorp/local/latest
-    local = {
-      source  = "hashicorp/local"
-      version = "2.1.0"
-    }
-  }
+
+
+
+
+
 
   # 🔧 WORKSHOP:
   # To ensure our code is reliable, we want to pin the Terraform version to the version you have installed.
@@ -46,5 +46,5 @@ terraform {
   #
   # Next, head to the Terraform documentation to find how to pin Terraform code to a specific version:
   # https://www.terraform.io/docs/language/settings/index.html#specifying-a-required-terraform-version
-  required_version = "1.0.9"
-}
+
+
